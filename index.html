@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form id="age-form">
+            <label for="dob-day">Day</label>
+            <input type="number" id="dob-day" placeholder="DD" min="1" max="31" required>
+
+            <label for="dob-month">Month</label>
+            <input type="number" id="dob-month" placeholder="MM" min="1" max="12" required>
+
+            <label for="dob-year">Year</label>
+            <input type="number" id="dob-year" placeholder="YYYY" min="1900" max="2024" required>
+
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div class="result" id="result">
+            Enter your date of birth to calculate your age.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
